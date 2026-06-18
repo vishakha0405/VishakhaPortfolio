@@ -12,7 +12,7 @@ export default function Home() {
       {/* <Navbar /> */}
 
       {/* Hero Section */}
-      <section className="min-h-screen flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16 px-4">
+      <section className="min-h-screen flex flex-col md:flex-row items-center justify-center gap-12 md:gap-20 px-4 py-10">
 
   {/* Left Side */}
   <div className="max-w-xl text-center md:text-left w-full">
@@ -26,7 +26,7 @@ export default function Home() {
   Frontend Developer • Project Coordinator
 </div>
   
-<div className="relative w-full flex justify-center">
+<div className="flex flex-wrap gap-4 justify-center md:justify-start">
 
   <a
     href="https://github.com/vishakha0405"
@@ -62,21 +62,19 @@ export default function Home() {
   
   
 {/* Right Side */}
-<div className="relative w-full flex justify-center">
-
-  <div className="absolute inset-0 bg-blue-500 blur-3xl opacity-20 rounded-3xl"></div>
+<div className="relative mx-auto w-fit">
 
   {/* Badges */}
-  <div className="hidden md:block absolute top-10 -left-16 px-4 py-2 rounded-full border border-cyan-400 bg-black z-20"> 
+  <div className="hidden md:block absolute top-10 -left-16 px-4 py-2 rounded-full border border-cyan-400 bg-black z-20">
     ⚛ React
   </div>
 
-  <div className="hidden md:block absolute top-12 -right-14  px-4 py-2 rounded-full border border-cyan-400 bg-black z-20">
+  <div className="hidden md:block absolute top-12 -right-14 px-4 py-2 rounded-full border border-cyan-400 bg-black z-20">
     ▲ Next.js
   </div>
 
-  <div className="hidden md:block absolute top-40 -left-20  px-4 py-2 rounded-full border border-cyan-400 bg-black z-20">
-    
+  <div className="hidden md:block absolute top-40 -left-20 px-4 py-2 rounded-full border border-cyan-400 bg-black z-20">
+    🔷 TypeScript
   </div>
 
   <div className="hidden md:block absolute top-60 -right-16 px-4 py-2 rounded-full border border-cyan-400 bg-black z-20">
@@ -91,16 +89,16 @@ export default function Home() {
     💨 Tailwind
   </div>
 
-  <div className="w-full max-w-xs sm:max-w-sm md:max-w-md mx-auto">
-  <Image
-    src="/pfp.png"
-    alt="Vishakha"
-    width={350}
-    height={450}
-    priority
-    className="w-full h-auto rounded-3xl border border-blue-500 relative z-10 hover:scale-105 transition-all duration-500 shadow-[0_0_50px_rgba(59,130,246,0.5)]"
-  />
-</div>
+  <div className="w-[300px] sm:w-[350px] md:w-[450px]">
+    <Image
+      src="/pfp.png"
+      alt="Vishakha"
+      width={350}
+      height={450}
+      priority
+      className="w-full h-auto rounded-3xl border border-blue-500 relative z-10 hover:scale-105 transition-all duration-500 shadow-[0_0_50px_rgba(59,130,246,0.5)]"
+    />
+  </div>
 
 </div>
 
@@ -116,7 +114,7 @@ export default function Home() {
   <span>About Me</span>
   </h2>
 
-  <p className="text-gray-400 text-lg max-w-3xl mx-auto mb-14">
+  <p className="text-gray-400 text-base md:text-lg max-w-3xl mx-auto mb-14 px-2">
     Computer Science graduate passionate about building modern web applications,
     creating responsive user interfaces, and helping teams stay organized through
     effective project coordination and collaboration.
@@ -401,7 +399,7 @@ export default function Home() {
   💼 Experience
 </h2>
 
-  <div className="border rounded-2xl p-8 text-left hover:border-cyan-400 transition-all duration-300">
+  <div className="border rounded-2xl p-6 md:p-8 text-left hover:border-cyan-400 transition-all duration-300">
 
     <h3 className="text-2xl font-bold">
       Full Stack Developer Intern
@@ -431,7 +429,7 @@ export default function Home() {
   🎓 Education
 </h2>
 
-  <div className="border rounded-2xl p-8">
+  <div className="border rounded-2xl p-6 md:p-8">
 
     <h3 className="text-2xl font-bold">
       B.Tech in Computer Science Engineering
@@ -455,7 +453,7 @@ export default function Home() {
         id="contact"
         className="mt-32 mb-20 text-center"
       >
-        <h2 className="text-2xl md:text-4xl font-bold mb-8">
+        <h2 className="text-3xl md:text-5xl font-bold mb-8">
           Contact
         </h2>
 
