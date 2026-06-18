@@ -7,28 +7,26 @@ import TypingText from "./typingtext";
 
 export default function Home() {
   return (
-    <main className="px-6 text-center">
+    <main className="px-4 md:px-6 text-center overflow-x-hidden">
 
       {/* <Navbar /> */}
 
       {/* Hero Section */}
-      <section className="min-h-screen flex flex-col md:flex-row items-center justify-center gap-16">
+      <section className="min-h-screen flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16 px-4">
 
   {/* Left Side */}
-  <div className="max-w-xl text-center md:text-left">
-    <h1 className="text-5xl md:text-7xl font-extrabold mb-6 bg-linear-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
+  <div className="max-w-xl text-center md:text-left w-full">
+    <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold mb-6 bg-linear-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
   Vishakha Batham
   </h1>
-  <div className="mb-6 text-cyan-400 text-2xl font-semibold">
+  <div className="mb-6 text-cyan-400 text-lg sm:text-xl md:text-2xl font-semibold">
   <TypingText />
 </div>
-
-<div className="text-cyan-400 text-2xl font-semibold mb-8">
+<div className="text-cyan-400 text-lg sm:text-xl md:text-2xl font-semibold mb-8">
   Frontend Developer • Project Coordinator
 </div>
   
-
-<div className="flex gap-4 flex-wrap">
+<div className="relative w-full flex justify-center">
 
   <a
     href="https://github.com/vishakha0405"
@@ -64,43 +62,45 @@ export default function Home() {
   
   
 {/* Right Side */}
-<div className="relative">
+<div className="relative w-full flex justify-center">
 
   <div className="absolute inset-0 bg-blue-500 blur-3xl opacity-20 rounded-3xl"></div>
 
   {/* Badges */}
-  <div className="absolute top-10 -left-16 px-4 py-2 rounded-full border border-cyan-400 bg-black z-20">
+  <div className="hidden md:block absolute top-10 -left-16 px-4 py-2 rounded-full border border-cyan-400 bg-black z-20"> 
     ⚛ React
   </div>
 
-  <div className="absolute top-12 -right-14 px-4 py-2 rounded-full border border-white bg-black z-20">
+  <div className="hidden md:block absolute top-12 -right-14  px-4 py-2 rounded-full border border-cyan-400 bg-black z-20">
     ▲ Next.js
   </div>
 
-  <div className="absolute top-40 -left-20 px-4 py-2 rounded-full border border-blue-500 bg-black z-20">
-    🔷 TypeScript
+  <div className="hidden md:block absolute top-40 -left-20  px-4 py-2 rounded-full border border-cyan-400 bg-black z-20">
+    
   </div>
 
-  <div className="absolute top-60 -right-16 px-4 py-2 rounded-full border border-orange-500 bg-black z-20">
+  <div className="hidden md:block absolute top-60 -right-16 px-4 py-2 rounded-full border border-cyan-400 bg-black z-20">
     🔥 Git
   </div>
 
-  <div className="absolute bottom-32 -left-16 px-4 py-2 rounded-full border border-pink-500 bg-black z-20">
+  <div className="hidden md:block absolute bottom-32 -left-16 px-4 py-2 rounded-full border border-cyan-400 bg-black z-20">
     🎨 UI/UX
   </div>
 
-  <div className="absolute bottom-10 -right-14 px-4 py-2 rounded-full border border-cyan-300 bg-black z-20">
+  <div className="hidden md:block absolute bottom-10 -right-14 px-4 py-2 rounded-full border border-cyan-400 bg-black z-20">
     💨 Tailwind
   </div>
 
+  <div className="w-full max-w-xs sm:max-w-sm md:max-w-md mx-auto">
   <Image
     src="/pfp.png"
     alt="Vishakha"
-    width={450}
-    height={550}
+    width={350}
+    height={450}
     priority
-    className="rounded-3xl border border-blue-500 relative z-10 hover:scale-105 transition-all duration-500 shadow-[0_0_50px_rgba(59,130,246,0.5)]"
+    className="w-full h-auto rounded-3xl border border-blue-500 relative z-10 hover:scale-105 transition-all duration-500 shadow-[0_0_50px_rgba(59,130,246,0.5)]"
   />
+</div>
 
 </div>
 
@@ -111,8 +111,9 @@ export default function Home() {
   id="about"
   className="py-24 max-w-6xl mx-auto"
 >
-  <h2 className="text-5xl font-bold mb-14">
-    👋 About Me
+  <h2 className="text-3xl md:text-5xl font-bold mb-14 flex items-center justify-center gap-2">
+  <span>👋</span>
+  <span>About Me</span>
   </h2>
 
   <p className="text-gray-400 text-lg max-w-3xl mx-auto mb-14">
@@ -214,11 +215,11 @@ export default function Home() {
   id="skills"
   className="mt-24 max-w-6xl mx-auto text-center"
 >
-  <h2 className="text-5xl font-bold mb-12">
-    Skills
-  </h2>
+  <h2 className="text-3xl md:text-5xl font-bold mb-12">
+  Skills
+</h2>
 
-  <div className="grid grid-cols-2 md:grid-cols-5 gap-6 mt-10">
+  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 mt-10">
 
   {[
     "React",
@@ -248,11 +249,11 @@ export default function Home() {
   id="projects"
   className="mt-32 text-center max-w-7xl mx-auto"
 >
-  <h2 className="text-5xl font-bold mb-12">
-    🚀 Projects
-  </h2>
+  <h2 className="text-3xl  md:text-5xl font-bold mb-12">
+  🚀 Projects
+</h2>
 
-  <div className="grid md:grid-cols-3 gap-8">
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
     {/* Labify */}
     <div
@@ -326,7 +327,7 @@ export default function Home() {
    
    
       <Image
-        src="/guest list.jpg"
+        src="/guestlist.jpg"
         alt="Guest List App"
         width={600}
         height={300}
@@ -396,9 +397,9 @@ export default function Home() {
   id="experience"
   className="mt-32 max-w-6xl mx-auto text-center"
 >
-  <h2 className="text-5xl font-bold mb-12">
-    💼 Experience
-  </h2>
+<h2 className="text-3xl md:text-5xl font-bold mb-12">
+  💼 Experience
+</h2>
 
   <div className="border rounded-2xl p-8 text-left hover:border-cyan-400 transition-all duration-300">
 
@@ -426,9 +427,9 @@ export default function Home() {
   id="education"
   className="mt-32 max-w-6xl mx-auto text-center"
 >
-  <h2 className="text-5xl font-bold mb-12">
-    🎓 Education
-  </h2>
+   <h2 className="text-3xl md:text-5xl font-bold mb-12">
+  🎓 Education
+</h2>
 
   <div className="border rounded-2xl p-8">
 
@@ -454,7 +455,7 @@ export default function Home() {
         id="contact"
         className="mt-32 mb-20 text-center"
       >
-        <h2 className="text-4xl font-bold mb-8">
+        <h2 className="text-2xl md:text-4xl font-bold mb-8">
           Contact
         </h2>
 
